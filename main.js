@@ -20,4 +20,18 @@ var Weapons = Backbone.Model.extend({
   // IndexWeapons
   // ShowWeapon
 
+var ShowWeaponView = Backbone.View.extend({
+  // initialize: function () {
+
+  // },
+
+  render: function () {
+    var weapon = new Weapon(),
+        source = $('#show-weapon-template').html(),
+        template = Handlebars.compile(source),
+        templateHTML = template(weapon.toJSON());
+    $('#main').html(templateHTML);
+  }
+});
+
 // jQuery Onload Function
