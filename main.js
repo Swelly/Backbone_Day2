@@ -44,3 +44,8 @@ var ShowWeaponView = Backbone.View.extend({
 });
 
 // jQuery Onload Function
+
+$(function () {
+  var app = new AppRouter();
+  Backbone.history.start();
+});
