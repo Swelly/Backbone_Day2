@@ -4,32 +4,32 @@
   <title>Weaponry</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 
-  <script id="app-template" type="x-handlebars-template">
-    <h1>Weapons</h2>
-  </script>
+<script id="app-template" type="x-handlebars-template">
+  <h1>Weapons</h1>
+</script>
 
-  <script id="show-weapon-template" type="x-handlebars-template">
-    <h2>{{name}}</h2>
-    <h3>{{type}}</h3>
-    <br>
-    <p>Power level: {{power_level}}</p>
-  </script>
+<script id="show-weapon-template" type="x-handlebars-template">
+  <h2>{{name}}</h2>
+  <h3>{{type}}</h3>
+  <p>Power level: {{power_level}}</p>
+</script>
 
-  <script id="index-weapons-template" type="x-handlebars-template">
-  </script>
+<script id="index-weapons-template" type="x-handlebars-template">
+  {{#each weapons}}
+    {{>weapon}}
+  {{/each}}
+</script>
 
 
-  <div id = "main">
+  <div id="main">
   </div>
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="https:////cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"type="text/javascript"></script>
-  <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
-  <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+  <script src="https:////cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
